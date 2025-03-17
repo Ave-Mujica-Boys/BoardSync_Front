@@ -36,7 +36,8 @@ npm run reset-project
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
 ## App ScreenShots
-![1](https://github.com/user-attachments/assets/fda326f2-fd02-4a7d-a282-ed2f3ed33052)
+| ![Login Screen](https://github.com/user-attachments/assets/fda326f2-fd02-4a7d-a282-ed2f3ed33052) | ![Board Screen](https://github.com/user-attachments/assets/c0533c6c-43e0-4b42-9ed3-f607538bb098) |
+
 
 
 
