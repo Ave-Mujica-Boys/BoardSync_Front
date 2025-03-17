@@ -4,13 +4,28 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
-import 'react-native-reanimated';
+import { ActionSheetProvider } from '@expo/react-native-action-sheet';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-//import { useColorScheme } from '@/hooks/useColorScheme';
-
-// Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync();
+const InitialLayout = () => {
+    return (
+        <Stack>
+            <Stack.Screen name="index" options={{ headerShown: false }} />
+        </Stack>
+    );
+}
 
 export default function RootLayout() {
-  
-}
+    return (
+        <ActionSheetProvider>
+            <>
+                <StatusBar style="light" />
+                <GestureHandlerRootView style={{ flex: 1 }}>
+                    <InitialLayout />
+                </GestureHandlerRootView>
+            </>
+        </ActionSheetProvider>
+    );
+};
+
+
